@@ -1,0 +1,14 @@
+.si div,header, span{
+    color: white;
+}
+
+.dark-green{
+  background-color: #022a2e;
+}
+
+.si{
+  background-image: url("imgs/banner.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
