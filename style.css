@@ -12,3 +12,6 @@
   background-size:cover;
 }
 
+.carousel-inner img {
+  height: 300px;
+}
