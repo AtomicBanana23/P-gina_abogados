@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RP Corporativo</title>
+    <script src="./libraries/jquery.js" charset="UTF-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="./libraries/bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
+    <link rel="stylesheet" href="./libraries/bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body id = "A">
@@ -194,6 +198,36 @@
         </div>
       </div>
     </div> 
+
+    <div class="container">
+
+      <h1>Agenda tu cita</h1>
+
+      <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#modalDate">
+        Agendar
+      </button>
+
+  </div>
+
+  <div class="modal" id="modalDate" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Calendario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="input-group date cl-date">
+          <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/calendario.js" charset="UTF-8"></script>
 
     <footer class="mt-5 py-3 dark-green">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
