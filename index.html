@@ -209,7 +209,7 @@
 
   </div>
 
-  <div class="modal" id="modalDate" tabindex="-1" role="dialog">
+  <div class="modal fade" id="modalDate" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -217,11 +217,11 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="input-group date cl-date">
-          <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+          <input type="text" class="form-control" id="datepicker-input"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary" id="save-date-btn">Save changes</button>
         </div>
       </div>
     </div>
