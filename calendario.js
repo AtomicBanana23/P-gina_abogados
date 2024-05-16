@@ -9,13 +9,14 @@
     $('#save-date-btn').on('click', function() {
         // Obtener el valor del datepicker
         var selectedDate = document.getElementById("datepicker-input").value;
-        alert(selectedDate);
+        console.log(selectedDate);
         
         $.ajax({
-            "method":"POST",
-            "url": "./citas.php",
-            "data": 'selectedDate'
-        }).done(function(info){
-           alert(info);
-        })
+            type: "POST",
+            url: "citas.php",
+            data: {selectedDate : selectedDate},
+            success: function(data){
+                alert(data);
+            }
+            });
     });
